@@ -23,6 +23,7 @@ bot = Bot(config.TG_BOT_TOKEN)
 dp = Dispatcher()
 
 
+
 @dp.message(Command('start'))
 async def cmd_start(message: types.Message):
 	await message.answer('Приветики :3\nЭтот бот может отправлять картинки с котиками! (=^･^=)\nНапиши /help чтобы узнать больше. ;3')
